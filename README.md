@@ -23,3 +23,9 @@ Usage of ./todomanager:
 ### Build
 
 Build executable with `go build ./cmd/todomanager/`
+
+### Example
+
+1. Run server. You will see log message `Starting echo server on port 8080`
+2. Open new console and make a request to server: `curl localhost:8080 -d "hello"`
+3. Make sure you received "Echo: hello"
