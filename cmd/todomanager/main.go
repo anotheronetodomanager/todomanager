@@ -24,11 +24,14 @@ func main() {
 		bodyBytes, err := ioutil.ReadAll(r.Body)
 		if err != nil {
 			writeResponse(w, "", http.StatusInternalServerError)
+			log.Println("Failed to read body:", err)
+			return
 		}
 
 		// close body to avoid memory leaks
 		if err = r.Body.Close(); err != nil {
 			log.Println("Failed to close request body:", err)
+			return
 		}
 
 		// print body to logs
