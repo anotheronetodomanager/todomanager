@@ -5,6 +5,7 @@ import "time"
 //задача
 type Task struct {
 	Id          uint   `json:"Id"`
+	TargetId    uint   `json:"TargetId"`
 	Name        string `json:"Name"`
 	Priority    uint   `json:"Priority"`
 	Description string `json:"Description"`
