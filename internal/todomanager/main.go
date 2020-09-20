@@ -3,12 +3,16 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/anotheronetodomanager/todomanager/internal/todomanager/model"
 	"io/ioutil"
 	"log"
 	"net/http"
 )
 
 var port = flag.String("port", "8080", "server port")
+
+var tasks []model.Task
+var targets []model.Target
 
 // example echo server
 func main() {
