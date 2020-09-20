@@ -13,7 +13,7 @@ You need only Go downloaded.
 
 ### Run
 
-Run it with command `go run ./cmd/todomanager/`. Use `-port` flag to specify port for server. Flag `-help` shows output:
+Run it with command `go run ./internal/todomanager/`. Use `-port` flag to specify port for server. Flag `-help` shows output:
 ```
 Usage of ./todomanager:
   -port string
@@ -22,7 +22,7 @@ Usage of ./todomanager:
 
 ### Build
 
-Build executable with `go build ./cmd/todomanager/`
+Build executable with `go build ./internal/todomanager/`
 
 ### Example
 
